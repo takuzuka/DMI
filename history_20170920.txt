@@ -956,6 +956,7 @@
  1991  ls -l
  1992  chromium-browser 
  1993  ls
+create script
  1994  nano git-download.sh
  1995  ls -l
  1996  cat git-download.sh
@@ -967,17 +968,20 @@
  2002  git-download
  2003  ls
  2004  pwd
+add path
  2005  PATH=$PATH:/home/user
  2006  echo $PATH
  2007  git-download
  2008  git-download.sh
  2009  ls -l git-download.sh
  2010  ls -l /bin/ls
+change rights for file, 744  rwxr--r--
  2011  chmod 744 git-download.sh
  2012  ls -l git-download.sh
  2013  git-download
  2014  git-download.sh
  2015  nano git-download.sh
+remove dmi
  2016  rm -rf DMI
  2017  nano git-download.sh
  2018  git-download.sh
@@ -986,15 +990,22 @@
  2021  ls-l
  2022  ls -l
  2023  git-download
- 2024  cd DMI
+go to folder dmi 
+2024  cd DMI
  2025  ls -l
  2026  ls -la
+move from home/user file git-downl to this folder
  2027  mv ~/git-download ./
  2028  ls -l
  2029  ls -la
+add to path
  2030  PATH=$PATH:~/DMI
+try to open, but failure
  2031  git-download 
+remove  without prompting for confirmation regardless of the file's permiss.
  2032  rm -rf DMI/
  2033  ls -l
+create new text
  2034  nano git-upload
+from command history create new txt file
  2035  history > history_20170920.txt
