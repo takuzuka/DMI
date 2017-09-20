@@ -1,4 +1,4 @@
- 1036  cd Documents
+ 1036  c Documents
  1037  pwd
  1038  cd Documents/
  1039  cd documents/
@@ -51,7 +51,7 @@
  1086  ls -la
  1087  cd..
  1088  cd ..
- 1089  pwd
+ 1089  pw
  1090  cd
  1091  pwd
  1092  ls -l
@@ -442,7 +442,7 @@
  1477  who
  1478  ls
  1479  cd abc
- 1480  pwd
+ 1480 pwd
  1481  cd user
  1482  cd ..
  1483  pwd
