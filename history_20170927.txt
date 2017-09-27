@@ -1,57 +1,3 @@
- 1045  x=10
- 1046  echo The value of variable x = $x 
- 1047  echo -e "Tecmint \bis \ba \bcommunity \bof \bLinnux \bNerds"
- 1048  echo -e "Tecmint \nis \ba \ncommunity \nof \nLinnux \nNerds"
- 1049  echo -e "Tecmint \tis \ta \tcommunity \tof \tLinnux \tNerds"
- 1050  echo -e"\n\tTecmint \n\ta \n\tcommunity \n\tof \n\tNerds"
- 1051  echo -e "\n\tTecmint \n\tis \n\ta  \n\tcommunity \n\tof \n\tNerds" 
- 1052  echo -e "\vTecmint \vis \va \vcommunity \vof \n\vNerds"
- 1053  echo -e "\n\vTecmint \n\vis \n\va  \n\vcommunity \n\vof \n\vLinux \n\vNerds" 
- 1054  echo -e "\Tecmint \ris  community of Linux Nerds"a
- 1055  echo -e "\Tecmint \ris  community of Linux Nerds"
- 1056  echo -e "\Tecmint is a community \cof Linux Nerds"
- 1057  echo -e "Tecmint is a community \cof Linux Nerds"
- 1058  echo -n "Tecmint is a community of Linux Nerds"
- 1059  echo -e "\Tecmint \ris  community of Linux Nerds"
- 1060  echo -e "\Tecmint is a community \cof Linux Nerds"
- 1061  echo -n "Tecmint is a community of Linux Nerds"
- 1062  pwd
- 1063  echo -n "Tecmint is a community of Linux Nerds"
- 1064  echo -e "Tecmint is a community of \aLinux Nerds"
- 1065  echo *
- 1066  echo * .jpeg
- 1067  echo echo "Test Page" > testpage
- 1068  pwd
- 1069  history
- 1070  history > history.txt
- 1071  la -ls
- 1072  ls
- 1073  hisroty
- 1074  history
- 1075  ls -la
- 1076  cd darbi123
- 1077  ls
- 1078  la
- 1079  ls -la
- 1080  $ echo Tecmint is a community of Linux Nerds
- 1081  history
- 1082  x=10
- 1083  echo The value of variable x = $x
- 1084  echo -e "Tecmint \bis \ba \bcommunity \bof \bLinux \bNerds"
- 1085  echo -e "Tecmint \nis \na \ncommunity \nof \nLinux \nNerds"
- 1086  echo -e "Tecmint \tis \ta \tcommunity \tof \tLinux \tNerds"
- 1087  echo -e "\n\tTecmint \n\tis \n\ta \n\tcommunity \n\tof \n\tLinux \n\tNerds"
- 1088  echo -e "\vTecmint \vis \va \vcommunity \vof \vLinux \vNerds"
- 1089  echo -e "\n\vTecmint \n\vis \n\va \n\vcommunity \n\vof \n\vLinux \n\vNerds"
- 1090  echo -e "\vTecmint \vis \va \vcommunity \vof \vLinux \vNerds"
- 1091  echo -e "\vTecmint \n\vis \n\va \vcommunity \n\vof \n\vLinux \n\vNerds"
- 1092  echo -e "Tecmint \ris a community of Linux Nerds"
- 1093  echo -e "Tecmint is a community \cof Linux Nerds"
- 1094  echo -n "Tecmint is a community of Linux Nerds"
- 1095  echo -e "Tecmint is a community of \aLinux Nerds"
- 1096  echo *
- 1097  history
- 1098  echo "Test Page" > tekst.txt
  1099  history > history.txt
  1100  la
  1101  ls
@@ -998,3 +944,57 @@
  2042  pwd
  2043  ls -l
  2044  history > history_20170927.txt
+ 2045  ls -la
+ 2046  nano git-upload 
+ 2047  git-upload
+ 2048  echo $0
+ 2049  echo $#
+ 2050  echo $*
+ 2051  echo $@
+ 2052  echo $?
+ 2053  echo $$
+ 2054  echo $!
+ 2055  nano shell_example.sh 
+ 2056  shell_example.sh 
+ 2057  nano shell_example.sh 
+ 2058  shell_example.sh 
+ 2059  nano shell_example.sh 
+ 2060  shell_example.sh 
+ 2061  nano shell_example.sh 
+ 2062  shell_example.sh arg1 arg2 arg3
+ 2063  shell_example.sh arg1 arg2
+ 2064  nano shell_example.sh 
+ 2065  shell_example.sh arg1 arg2 arg3
+ 2066  nano shell_example.sh 
+ 2067  shell_example.sh arg1 arg2 arg3
+ 2068  nano shell_example.sh 
+ 2069  shell_example.sh arg1 arg2 arg3
+ 2070  nano shell_example.sh 
+ 2071  shell_example.sh 
+ 2072  nano shell_example.sh 
+ 2073  shell_example.sh 
+ 2074  shell_example.sh arg1
+ 2075  shell_example.sh arg1 arg2
+ 2076  nano shell_example.sh 
+ 2077  shell_example.sh arg1 arg2
+ 2078  nano shell_example.sh 
+ 2079  shell_example.sh
+ 2080  shell_example.sh arg1
+ 2081  shell_example.sh arg1 arg2
+ 2082  shell_example.sh arg1 arg2 arg3
+ 2083  nano shell_example.sh 
+ 2084  shell_example.sh arg1 arg2 arg3
+ 2085  nano shell_example.sh 
+ 2086  shell_example.sh arg1 arg2 arg3
+ 2087  nano shell_example.sh 
+ 2088  shell_example.sh
+ 2089  nano shell_example.sh 
+ 2090  shell_example.sh
+ 2091  nano shell_example.sh 
+ 2092  shell_example.sh
+ 2093  nano shell_example.sh 
+ 2094  shell_example.sh
+ 2095  nano shell_example.sh 
+ 2096  shell_example.sh
+ 2097  nano git-upload 
+ 2098  history > history_20170927.txt
