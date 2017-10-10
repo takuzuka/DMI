@@ -1,0 +1,31 @@
+﻿cat /etc/*-release  >sistēmas informacija
+cat a.txt  >parada kas atrodas faila
+cd Deskstop/  >aiziet uz dekstop darba vietu
+cd ..  >aiziet atpkal no kurienes gaji
+chmod 744  >pieskirt izpildisanas atlauju
+cp example.txt tests  >kopet  failu uz citu vietu
+9 echo $0  >rada to, ka stav aiz «$»
+git add .  >pievieno mainas githuba 
+git clone  >klone visi faili no githuba
+git-download  >scripta izmantosana , kas saglaba laiku  klonesanu
+git config --global user.email  >githuba ielogosanas,izmantojot e pasti
+git commit -m  >commita veidosana
+git push origin master  >augsupielade github
+git-upload  >skripta izmantosana , kas saglaba laiku augsupieladi
+history  >komandu vestures parskats
+history > history.txt   >komandu vestures saglabasana faila
+ls  >mapes saturs
+ls -l  >mapes saturs + atlauju parskats par failiem
+lsb_realese  >aktivitati moduļi 
+mkdir example  >izveidot direktoriju
+mv example.txt > tests  >parvietot failu
+nano example.txt  >failu modificesana
+python vards.py  >izpildito, lietojot python
+PATH=$PATH:/home/user  >pievieno celam mapi
+pwd  >parada kur mes esam, kada direktoriju 
+rm example.txt  >izdzes failu
+rmdir DMI  >izdzes direktoriju
+uname -r  >nosauc sistemu 
+31 whereis # komanda kas parada kur atrodas konkrets fails
+32 whoami # parada kas ir esi "TU"
+33 ./basic_operators.sh # pieskirta atlauja skriptam
