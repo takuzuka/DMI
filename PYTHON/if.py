@@ -1,17 +1,19 @@
 # -*- coding: utf-8 -*-
+print " "
+a = input("x: ")
 
-a = input("vvedi chislo: ")
-if a>0:
-    print "ti vel pozitivchik"
-elif a ==0:
-    print "ti vel nolik bez palochki"
+if a > 0:
+	print "ievadits pozitivs skaitlis"
+elif a == 0:
+	print "ievadits skaitlis ir 0"
 else:
-    print "ti vel nepozitivchik"
-print "hello darkness my old friend"
-'''
-if a>0:
-    print "ti vel pozitivchik"
-else:
-    print "ti vel nepozitivchik"
-'''
+	print "ievadits negativs skaitlis"
+print "Goodbye!"
 
+'''
+if a > 0:
+	print "ievadits pozitivs skaitlis"
+else:
+	print "ievadits ne pozitivs skaitlis"
+'''
+print " "
