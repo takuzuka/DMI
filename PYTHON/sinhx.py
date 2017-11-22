@@ -11,9 +11,9 @@ s= a
 print "a0 = %.2f " %(a)
 
 
-while k < 3:
+while k < 500:
 	k=k+1
-	a=
+	a=a*x*x/(2*k*(2*k+1))
 	s= s+ a
 print " a%d = %6.2f S%d = %6.2f"%(k,a,k,s)
 
