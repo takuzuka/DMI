@@ -4,17 +4,15 @@ from math import sinh
 
 def sinussh(x):
 	k=0
-	a=x/(1*2)
+	a=x/2
 	s= a
-	print "izdruka no liet.f. a0 = %6.2f S0 = %6.2f" %(a,s)
-
-
-	while k < 500:
-		k=k+1
-		R=x*x/(2*k*(2*k+1))
-		a=a*R
-		s= s+ a
-		print "izdruka no liet. f.  a%d = %6.2f S%d = %6.2f"%(k,a,k,s)
+	while k < 500: 
+		k+=1
+		R =x*x/(2*k*(2*k+1)*4)
+		a = a * R
+		s = s + a
+		if k == 499:
+			print "a499 = %6.2f S499= %6.2f"%(a,s)
 
 	print "izdruka no liet.f. Beigas"
 
