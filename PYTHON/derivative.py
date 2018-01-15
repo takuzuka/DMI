@@ -37,4 +37,10 @@ for i in range(n-1):
     y_prim.append(delta_y/delta_x)
 
 plt.plot(x[:n-1],y_prim)
+
+y_primprim = []
+for i in range(n-2):
+        delta_y_prim = y_prim[i+1] - y_prim[i]
+        y_primprim.append(delta_y_prim/delta_x)
+plt.plot(x[:n-2],y_primprim)
 plt.show()
