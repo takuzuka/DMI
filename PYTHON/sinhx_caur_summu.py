@@ -25,10 +25,12 @@ yy =sinussh(x)
 print type(yy)
 print "mans sinh(%.2f) = %6.2f"%(x,yy)
 
-print "     500"
-print "     ---        2*k+1"
-print "     \         x"
-print "s(x)= |  ------------------  " 
-print "     /    	    2*k+1 "
-print "     ---  (2*k+1)!*2 "
-print "     n=0"
+print "     500	"
+print "     ---        2*k+1	                   2	"
+print "     \         x                          x "
+print "s(x)= |  ------------------  	R=----------------- " 
+print "     /    	    2*k+1 	                 2 "
+print "     ---  (2*k+1)!*2                2*k*(2*k+1)*2"
+print "     n=0				"
+
+
