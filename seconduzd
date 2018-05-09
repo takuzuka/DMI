@@ -3,7 +3,7 @@
 <body>
 
 <center>
-<svg width="400" height="500">
+<svg width="400" height="400">
  <defs>
     <marker id="startarrow" markerWidth="10" markerHeight="7" 
     refX="10" refY="3.5" orient="auto">
@@ -36,10 +36,30 @@
       <line x1="235" y1="235" x2="269" y2="265" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
   <line x1="200" y1="250" x2="200" y2="300" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
    <line x1="165" y1="232" x2="125" y2="259" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+   
+    <line x1="150" y1="50" x2="115" y2="65" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+    <line x1="68" y1="132" x2="58" y2="154" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+    <line x1="60" y1="244" x2="70" y2="259" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+    <line x1="129" y1="335" x2="155" y2="350" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+     <line x1="245" y1="350" x2="275" y2="335" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+     <line x1="330" y1="264" x2="340" y2="248" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+     <line x1="350" y1="155" x2="335" y2="128" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+     <line x1="290" y1="62" x2="245" y2="45" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+     
+     
+      <line x1="172" y1="88" x2="85" y2="165" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+      <line x1="188" y1="96" x2="110" y2="250" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+      <line x1="220" y1="96" x2="292" y2="250" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+       <line x1="235" y1="85" x2="315" y2="165" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+       
+     
+       <line x1="172" y1="88" x2="85" y2="165" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
+     
+   
 </svg> 
  
  
- <h1>My first SVG</h1>
+ <h1>Communicative: many too many </h1>
  </center>
 </body>
 </html>
