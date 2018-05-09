@@ -15,6 +15,7 @@
     </marker>
   </defs>
   
+  
    <circle cx="200" cy="50" r="30" stroke="black" stroke-width="2" fill="firebrick" />
    <circle cx="100" cy="100" r="30" stroke="black" stroke-width="2" fill="firebrick" />
    <circle cx="50" cy="200" r="30" stroke="black" stroke-width="2" fill="firebrick" />
@@ -72,7 +73,7 @@
        <line x1="235" y1="315" x2="313" y2="235" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
        
        <line x1="307" y1="250" x2="307" y2="150" stroke="#000" stroke-width="2"  marker-end="url(#endarrow)" marker-start="url(#startarrow)" />
-     
+     <text x="0" y="390" fill="black">Radzeniece</text>
    
 </svg> 
  
