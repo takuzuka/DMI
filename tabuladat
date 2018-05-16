@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radzeniece REBC01</title>
+<meta name="description" content="Layout of up to four trees in four directions, all sharing a single root." />
+<!-- Copyright 1998-2018 by Northwoods Software Corporation. -->
+<meta charset="UTF-8">
+    <script src="go-debug.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.8.18/go-debug.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gojs/1.8.18/go.js"></script>
+<script src="../release/go.js"></script>
+<script src="../assets/js/goSamples.js"></script>  <!-- this is only for the GoJS Samples framework -->
+<script id="code">
+  function init() {
+    if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
+    var $ = go.GraphObject.make;  // for conciseness in defining templates in this function
+    myDiagram =
+      $(go.Diagram, "myDiagramDiv",  // must be the ID or reference to div
+        { initialContentAlignment: go.Spot.Center });
+    var graygrad = $(go.Brush, "Linear", { 0: "#F5F5F5", 1: "#F1F1F1" });
+    var bluegrad = $(go.Brush, "Linear", { 0: "#CDDAF0", 1: "#91ADDD" });
+    var yellowgrad = $(go.Brush, "Linear", { 0: "#FEC901", 1: "#FEA200" });
+    var lavgrad = $(go.Brush, "Linear", { 0: "#EF9EFA", 1: "#A570AD" });
+    myDiagram.nodeTemplate =
+      $(go.Node, "Auto",
+        { isShadowed: true },
+        $(go.Shape, "RoundedRectangle",
+          { fill: graygrad, stroke: "#D8D8D8" },
+          new go.Binding("fill", "color")),
+        $(go.TextBlock,
+          { margin: 5, font: "bold 11px Helvetica, bold Arial, sans-serif" },
+          new go.Binding("text", "key"))
+      );
+    myDiagram.linkTemplate =
+      $(go.Link,  // the whole link panel
+        { selectable: false },
+        $(go.Shape));  // the link shape
+    myDiagram.model = new go.TreeModel([
+        // these node data are indented but not nested according to the depth in the tree
+        { key: "Back End", color: lavgrad },
+          { key: "Python", parent: "Back End"},
+          { key: "Node", parent: "Back End"},
+                { key: "http-server", parent: "Node"},
+                { key: "express", parent: "Node"},
+          { key: "Apache-tomcat", parent: "Back End"},
+        
+        
+          { key: "Front End", parent: "Back End", color: lavgrad },
+              { key: "Firefox", parent: "Front End" },
+              { key: "Google Chrome", parent: "Front End" },
+              { key: "Internet Explorer", parent: "Front End" },
+              { key: "User", parent: "Front End", color: lavgrad },
+            { key: "Data base", parent: "Back End",  color: lavgrad },
+              { key: "MySQL", parent: "Data base" },
+              { key: "MongoDB", parent: "Data base" }
+      ]);
+    doubleTreeLayout(myDiagram);
+  }
+  function doubleTreeLayout(diagram) {
+    var $ = go.GraphObject.make;  // for conciseness in defining templates
+    diagram.startTransaction("Double Tree Layout");
+    var leftParts = new go.Set(go.Part);
+    var rightParts = new go.Set(go.Part);
+    separatePartsByLayout(diagram, leftParts, rightParts);
+    var layout1 =
+      $(go.TreeLayout,
+        { angle: 180,
+          arrangement: go.TreeLayout.ArrangementFixedRoots,
+          setsPortSpot: false });
+    var layout2 =
+      $(go.TreeLayout,
+        { angle: 0,
+          arrangement: go.TreeLayout.ArrangementFixedRoots,
+          setsPortSpot: false });
+    layout1.doLayout(leftParts);
+    layout2.doLayout(rightParts);
+    diagram.commitTransaction("Double Tree Layout");
+  }
+  function separatePartsByLayout(diagram, leftParts, rightParts) {
+    var root = diagram.findNodeForKey("Back End");
+    if (root === null) return;
+    leftParts.add(root);
+    rightParts.add(root);
+    root.findTreeChildrenNodes().each(function(child) {
+        var dir = child.data.dir;
+        var coll = (dir === "left") ? leftParts : rightParts;
+        coll.addAll(child.findTreeParts());
+        coll.add(child.findTreeParentLink());
+      });
+  }
+</script>
+</head>
+<body onload="init()">
+<div id="sample">
+  <div id="myDiagramDiv" style="background-color: white; border: solid 1px black; width: 100%; height: 500px"></div>
+  
+  
+</div>
+</body>
+</html>
